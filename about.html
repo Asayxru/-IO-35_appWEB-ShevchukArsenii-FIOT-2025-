@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Про застосунок Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: "Roboto Condensed", sans-serif; background-color: #f5f5f7; color: #1d1d1f; margin: 0; }
+    main { max-width: 900px; margin: 0 auto; padding: 20px; }
+    h1, h2 { color: grey; }
+    a.back { display: inline-block; margin-top: 15px; color: grey; text-decoration: none; }
+    a.back:hover { text-decoration: underline; }
+    section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #e0e0e0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Про вебзастосунок «Notes»</h1>
+
+    <section id="domain">
+      <h2>1. Предметна область</h2>
+      <p>
+        Вебзастосунок <strong>Notes</strong> призначений для створення, редагування та збереження коротких нотаток безпосередньо у браузері користувача. 
+        Основна мета — забезпечити швидкий доступ до особистих заміток без потреби у сервері чи базі даних. 
+        Це зручний інструмент для студентів, викладачів, офісних працівників і будь-кого, хто хоче зберігати думки, ідеї чи завдання.
+      </p>
+    </section>
+
+    <section id="functionality">
+      <h2>2. Функціонал застосунку</h2>
+      <ul>
+        <li>Створення нотаток із заголовком, текстом та категорією.</li>
+        <li>Редагування вже існуючих нотаток.</li>
+        <li>Видалення непотрібних нотаток.</li>
+        <li>Автоматичне збереження даних у <code>localStorage</code> браузера.</li>
+        <li>Відображення нотаток у вигляді карток або таблиці.</li>
+        <li>Адаптивний інтерфейс (підтримка мобільних пристроїв).</li>
+      </ul>
+    </section>
+
+    <section id="business-logic">
+      <h2>3. Бізнес-логіка (сценарій користування)</h2>
+      <ol>
+        <li>Користувач відкриває сторінку застосунку.</li>
+        <li>У формі вводить назву, текст нотатки та обирає категорію.</li>
+        <li>Натискає кнопку <em>«Зберегти»</em> — дані записуються у <code>localStorage</code>.</li>
+        <li>Список нотаток оновлюється на екрані.</li>
+        <li>Користувач може натиснути на нотатку, щоб відредагувати або видалити її.</li>
+      </ol>
+    </section>
+
+    <section id="requirements">
+      <h2>4. Функціональні вимоги</h2>
+      <ul>
+        <li>Можливість створення, редагування та видалення нотаток.</li>
+        <li>Збереження інформації у локальному сховищі браузера.</li>
+        <li>Відображення нотаток у структурованому вигляді.</li>
+        <li>Підтримка кирилиці, латиниці та емодзі у тексті.</li>
+      </ul>
+
+      <h2>5. Нефункціональні вимоги</h2>
+      <ul>
+        <li>Інтерфейс має бути адаптивним для різних розмірів екранів (Flexbox / Grid).</li>
+        <li>Швидкий відгук інтерфейсу без перезавантаження сторінки.</li>
+        <li>Використання сучасних стандартів HTML5 та CSS3.</li>
+        <li>Забезпечення зручності користування (UX-дружній дизайн).</li>
+      </ul>
+    </section>
+
+    <section id="conclusion">
+      <h2>6. Висновок</h2>
+      <p>
+        У застосунку <strong>Notes</strong> реалізовано зручний механізм зберігання заміток без серверної частини.
+        Він дозволяє ефективно організувати особисті записи, а завдяки адаптивному дизайну — користуватися ним з будь-якого пристрою.
+      </p>
+    </section>
+
+    <a href="index.html" class="back">← Повернутись на головну</a>
+  </main>
+</body>
+</html>
