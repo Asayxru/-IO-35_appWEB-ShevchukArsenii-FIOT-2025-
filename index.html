@@ -8,113 +8,140 @@
 </head>
 <body>
 
-  <main class="content" aria-live="polite">
-    <header>
-      <h1>Notes. — Головна</h1>
-      <h2>Останні новини та оновлення</h2>
-    </header>
+
+<header class="site-header">
+  <div class="logo">Notes</div>
+  <button class="burger" aria-label="Відкрити меню">☰</button>
+  <nav class="site-nav" aria-label="Основна навігація">
+    <a href="index.html">Головна</a>
+    <a href="about.html">Про застосунок</a>
+  </nav>
+</header>
+
+
+<main class="content" aria-live="polite">
+
+
+  <header>
+    <h1>Notes — Головна</h1>
+    <h2>Останні новини та оновлення</h2>
+  </header>
+
+
+  
+
+  <section class="notes-grid" aria-label="Список нотаток">
 
     <article class="news" aria-labelledby="news1">
       <h3 id="news1">Оновлення Notes 1.1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Покращено інтерфейс та стабільність роботи.</p>
     </article>
 
     <article class="news" aria-labelledby="news2">
       <h3 id="news2">Реліз вебверсії</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Застосунок працює без серверної частини.</p>
     </article>
 
     <article class="news" aria-labelledby="news3">
       <h3 id="news3">Синхронізація</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Нотатки зберігаються у localStorage браузера.</p>
     </article>
 
-    <section class="lab-section" aria-labelledby="images-sec">
-      <h2 id="images-sec">Зображення</h2>
-      <figure>
-        <img src="img/note.jpg" alt="Notes" width="400" onerror="this.style.display='none'">
-      </figure>
-    </section>
+  </section>
 
-    <section class="lab-section" aria-labelledby="lists-sec">
-      <h2 id="lists-sec">Функції та сценарій використання</h2>
 
-      <h3>Маркований список функцій</h3>
-      <ul>
-        <li>Створення, редагування та видалення нотаток</li>
-        <li>Локальне збереження у браузері</li>
-        <li>Адаптивний інтерфейс</li>
-      </ul>
+  <section class="lab-section">
+    <h2>Зображення</h2>
+    <figure>
+      <img src="img/note.jpg" alt="Notes" width="400" onerror="this.style.display='none'">
+    </figure>
+  </section>
 
-      <h3>Нумерований список — короткий сценарій</h3>
-      <ol>
-        <li>Користувач відкриває головну сторінку.</li>
-        <li>Створює нотатку у формі швидкої нотатки.</li>
-        <li>Нотатка зберігається локально.</li>
-      </ol>
-    </section>
 
-    <section class="lab-section" aria-labelledby="table-sec">
-      <h2 id="table-sec">Таблиця прикладу нотаток</h2>
-      <table summary="Таблиця з прикладами нотаток">
-        <caption>Приклади нотаток</caption>
-        <thead>
-          <tr>
-            <th scope="col">Дата</th>
-            <th scope="col">Назва</th>
-            <th scope="col">Категорія</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>15.10.2025</td>
-            <td>Lorem ipsum dolor</td>
-            <td>Навчання</td>
-          </tr>
-          <tr>
-            <td>15.8.2023</td>
-            <td>Consectetur adipiscing</td>
-            <td>Побут</td>
-          </tr>
-          <tr>
-            <td>10.6.2022</td>
-            <td>Sed do eiusmod</td>
-            <td>Робота</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <section class="lab-section">
+    <h2>Функції застосунку</h2>
 
-    <section class="lab-section" aria-labelledby="form-sec">
-      <h2 id="form-sec">Форма — швидка нотатка</h2>
-      <form action="#" method="post" id="quick-note-form" aria-label="Швидка нотатка">
-        <label for="quick-title">Коротка назва:</label><br>
-        <input type="text" id="quick-title" name="quick-title" placeholder="Наприклад: Нагадування" required><br><br>
+    <ul>
+      <li>Створення нотаток</li>
+      <li>Редагування та видалення</li>
+      <li>Збереження у localStorage</li>
+    </ul>
 
-        <label for="quick-content">Текст нотатки:</label><br>
-        <textarea id="quick-content" name="quick-content" rows="3" placeholder="Короткий текст..." required></textarea><br><br>
+    <ol>
+      <li>Відкриття головної сторінки</li>
+      <li>Створення нотатки</li>
+      <li>Автоматичне збереження</li>
+    </ol>
+  </section>
 
-        <label for="quick-category">Категорія:</label>
-        <select id="quick-category" name="quick-category">
-          <option value="навчання">Навчання</option>
-          <option value="побут">Побут</option>
-          <option value="робота">Робота</option>
-        </select><br><br>
 
-        <button type="submit" class="save-btn">Додати швидку нотатку</button>
-      </form>
-    </section>
+  <section class="lab-section">
+    <h2>Приклади нотаток</h2>
 
-    <section class="lab-section" aria-labelledby="about-link-sec">
-      <h2 id="about-link-sec">Детальніше про застосунок</h2>
-      <p>Повний опис предметної галузі та бізнес-логіки доступний на сторінці:</p>
-      <p><a href="about.html">Про застосунок — опис та бізнес-логіка</a></p>
-    </section>
+    <table>
+      <caption>Структура нотаток</caption>
+      <thead>
+        <tr>
+          <th>Дата</th>
+          <th>Назва</th>
+          <th>Категорія</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>15.10.2025</td>
+          <td>Підготовка до ЛР</td>
+          <td>Навчання</td>
+        </tr>
+        <tr>
+          <td>12.09.2025</td>
+          <td>Список покупок</td>
+          <td>Побут</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-  </main>
 
-  <footer>
-    <p>© 2025 Notes by Шевчук Арсеній</p>
-  </footer>
+  <section class="lab-section">
+    <h2>Швидка нотатка</h2>
+
+    <form id="quick-note-form" aria-label="Форма створення нотатки">
+      <label for="title">Назва:</label>
+      <input type="text" id="title" required>
+
+      <label for="text">Текст:</label>
+      <textarea id="text" rows="4" required></textarea>
+
+      <label for="category">Категорія:</label>
+      <select id="category">
+        <option>Навчання</option>
+        <option>Робота</option>
+        <option>Побут</option>
+      </select>
+
+      <button type="submit">Зберегти нотатку</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Notes — Шевчук Арсеній
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.site-nav');
+
+    if (burger && nav) {
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
